@@ -1,0 +1,78 @@
+div.col-5, div.col-7 {
+    color: white;
+}
+
+div.col-8.weather {
+    background-color: red;
+    position: static;
+    border: 10px solid white;
+    border-top: 0;
+    border-radius: 15px;
+    padding: 0 10px 0 10px;
+}
+
+div#napok {
+    width: 120px;
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+div#weatherBtn {
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    left: 5px;
+}
+
+/* div#idojarasLabel {
+    position: relative;
+    top: 8px;
+} */
+
+div.ajanlat, span#homerseklet, p#ajanlat span {
+    text-align: right;
+    font-size: 1.7rem;
+    font-weight: lighter;
+}
+
+ 
+
+div#fokCelsius legend span {
+    font-size: x-large;
+    width: auto;
+}
+
+div#weather fieldset legend {
+    margin-bottom: 0;
+}
+
+div.hetiMin, div.hetiMax, div.hetiAtlag {
+    color: white;
+    position: relative;
+    top: -10px;
+    font-size: larger;
+}
+
+div.hetiMin {
+    text-align: left;
+}
+
+div.hetiMax {
+    text-align: center;
+}
+div.hetiAtlag {
+    text-align: right;
+}
+/* 
+fieldset.napok, div#napok.form-group {
+    background-color: darkorange;
+    border-radius: 12px;
+    padding: 0 10 px;
+} */
+
+/* div#napok {
+    width: 10%;
+    margin-left: 10px;
+    display: inline-block;
+} */

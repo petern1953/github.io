@@ -1,0 +1,96 @@
+html {
+    /* background-color: rgb(250, 230, 0); */
+}
+
+div.col-2 {
+    background-color: rgb(250, 230, 0);
+}
+
+div.col-8 {
+    /* background-color: red; */
+    position: static;
+    border: 10px solid white;
+    border-top: 0;
+    /* border-radius: 15px; */
+    /* padding: 10px; */
+}
+
+div.col-8.btn-group {
+    padding: 0;
+}
+
+div.col-3.btn {
+    padding: 0;
+    background-color: white;
+    margin: 0;
+}
+
+a {
+    width: 100%;
+    /* height: 30px; */
+    /* margin: 10px .1% 0; */
+    /* padding-top: 4px; */
+    display: inline-block;
+    border-radius: 10px;
+    font-family: 'Alegreya Sans', sans-serif; 
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+a, .btn-sajat {
+    background-color: rgb(220, 60, 10);
+    color: whitesmoke;
+    box-shadow: 2px 2px 1px 1px rgb(92, 1, 1);
+}
+
+.btn-green {
+    color: white;
+    background-color: rgb(3, 78, 3);
+}
+
+legend span {
+    font-size: small;
+    width: auto;
+}
+
+form fieldset.adatok {
+    width: 400px;
+    border: 1px solid darkgreen;
+    border-radius: 10px;
+    padding: 0 10px 10px;
+    margin: auto;
+    /* margin-top: 20px; */
+}
+
+/* div.col-6{
+    color: white;
+}
+
+div#napok.form-group {
+    width: 110px;
+    display: inline-block;
+    margin-left: 0;
+}
+
+div#weatherBtn {
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    left: 5px;
+}
+
+div#idojarasLabel {
+    position: relative;
+    top: 8px;
+}
+
+div#fokCelsius {
+    text-align: right;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+div#fokCelsius span {
+    font-weight: lighter;
+} */

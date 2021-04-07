@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Egy modal-t, azaz felugró ablakot kell készítened.
+*** A modal főbb részei:
+    bezárás gomb
+    fejléc
+    tartalmi rész
+    lábléc (alsó gombok jobbra igazítva).
+A modal szélessége alaphelyzetben 100%, 560 pixel felett 50%.
+A modalt nem dinamikusan JavaScriptből kell létrehozni, hanem már eleve a DOM része lehet!
+*** Működés: ***
+A modalt bármilyen gomb vagy egyéb elem eseményéhez hozzá lehessen rendelni, 
+tehát pl.: ha rákattintok egy gomra akkor jelenik meg.
+A modal mind vertikálisan, mind horizontálisan középre kell legyen pozicionálva.
+Amikor a modal megnyílik, a hátteret egy részben áttetsző réteggel le kell takarni, 
+és a modal-t focusba kell helyezni -->
+    <!-- A modal egy egyszerű animáció kíséretében jelenjen meg (pl.: fade).
+A modal egy egyszerű animáció kíséretében tűnjön el bezáráskor.
+A modalon kívülre kattintva is automatikusan záródjon be a modal, 
+tűnjön el az overlay réteg. -->
+    <div id="basepage" class="relative">
+        <img src="./img/dummy_page.jpg" alt="Host page for modal">
+        <button id="init-button">Show modal</button>
+    </div>
+
+    <div id="hider" class="hider--hidden">
+    </div>
+    <div id="modal__container" class="modal__container--hidden">
+        <div id="killer" onclick="hideModal()"></div>
+        <div id="modal">
+            <header id="modal__header">
+                <button class="closer" onclick="hideModal()"><i class="fa fa-times pointer"></i></button>
+            </header>
+            <section>
+                <article class="article">
+                    <header>
+                        <h3 class="article__title">CSSScript.com</h3>
+                    </header>
+                    <p class="article__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur itaque ipsum nemo
+                        eaque in voluptatibus libero sed temporibus ratione! Officia eveniet possimus quis consequuntur
+                        illo
+                        ab obcaecati earum porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                        architecto itaque iste, sapiente,
+                        asperiores veniam ad quae cum, recusandae ut inventore animi quaerat. Deserunt doloremque optio
+                        consequatur sint cupiditate delectus. Vel delectus id vitae, ea nemo libero praesentium
+                        cupiditate
+                        iste iusto, sequi perferendis et
+                        quaerat nesciunt voluptas omnis deleniti earum soluta placeat magni officiis ipsum. Nobis
+                        asperiores
+                        eius veritatis dignissimos?
+
+                    </p>
+                </article>
+            </section>
+            <footer class="modal__footer">
+                <button class="button--ok pointer" onclick="hideModal()" autofocus>Okay</button>
+                <button class="button--cancel pointer" onclick="hideModal()">Cancel</button>
+            </footer>
+        </div>
+        <script src="./js/main.js"></script>
+</body>
+
+</html>

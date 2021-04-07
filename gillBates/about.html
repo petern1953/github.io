@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magamról</title>
+    <link rel="stylesheet" href="assets/css/mycss.css">
+</head>
+
+<body>
+    <!-- header, nav, main, section, footer -->
+
+    <!-- header -->
+    <header id="header">
+        <img src="assets/images/GBbigpic2.png" alt="Gill Bates personally">
+        <h1>Magamról</h1>
+    </header>
+
+    <!-- nav -->
+    <nav id="mainMenu" class="links about">
+        <a href="index2.html">Home</a> |
+        <a href="works.html">Works</a> |
+        <a href="gallery.html">Gallery</a> |
+        <a href="about.html">About</a>
+    </nav>
+
+    <!-- main -->
+    <main class="wrapper3">
+        <!-- section-->
+        <section class="inner3">
+            <article class="content">
+                <!-- mit csináltam, erősségeim, hobbim, beszélt nyelvek (ol, ul, li) -- hosszabb leírás -->
+                <p class="firstp">Első számítástechnikai vállalkozásom a Paul Allannal közösen alapított Traf-O-Data
+                    volt. 1975-ben az
+                    Intel 8080 processzorra fejlesztettem BASIC interpretert. Ennek kapcsán alapítottuk a Kicsi
+                    Puha nevű
+                    céget. </p>
+                <div class="box">
+                    <hr>
+                    <h3>Fejlesztéseim</h3>
+                    <ol>
+                        <li>BASIC</li>
+                        <li>MS-DOS</li>
+                        <li>Multiplan</li>
+                        <li>Word</li>
+                        <li>Windows</li>
+                    </ol>
+                </div>
+                <div class="box">
+                    <hr>
+                    <h3>Erősségeim</h3>
+                    <ul>
+                        <li>Kitartás</li>
+                        <li>Gyors helyzetfelismerés</li>
+                        <li>Vállalkozó szellem</li>
+                        <li>Elkötelezettség</li>
+                        <li>Kiváló terhelhetőség</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="box">
+                    <hr>
+                    <h3>Nyelvismeret</h3>
+                    <ul>
+                        <li>
+                            <h4>Humán nyelvek</h4>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>Anyanyelvi szinten beszélem az angol, német, francia,</li>
+                                <li>konyhanyelvi szinten az ivrit és</li>
+                                <li>a szanszkrit nyelveket.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <br>
+                            <h4>Programnyelvek</h4>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>G betűsek mint Go, Groovy</li>
+                                <li>I betűsek mint IDL, Intercal</li>
+                                <li>L betűsek mint LISP, LOGO, Lua</li>
+                                <li>B a BASIC összes nyelvjárása</li>
+                                <li>A betűsek mint Algol, ADA, A+</li>
+                                <li>T betűsek mint Turing, Tempo</li>
+                                <li>E betűs: ECMAScript, Eiffel</li>
+                                <li>S betűsek mint Scratch, Simula</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="box">
+                    <hr>
+                    <h3>Hobbijaim</h3>
+                    <p> Legfőbb hobbim a nyelvtanulás. Kora gyerekkorom óta imádok programozni, több mint ötven
+                        programnyelven anyanyelvi szinten írok, olvasok. Valamennyit a gyakorlatban is alkalmazni tudom.
+                        Emellett szeretem az elmesportokat, kiváltképpen a sakkot, a Got és a bridzset. Kedvelem a
+                        természetet, a természetjárást - feleségemmel (nős vagyok) sokat kirándulok is. Rendszeresen
+                        sportolok, jól
+                        úszom, vizipólózom, kiválóan teniszezem.
+                    </p>
+                    <hr>
+
+            </article>
+        </section>
+        <form>
+            <fieldset>
+                <legend>Ha felkeltettem érdeklődését, kérem, adja meg elérhetőségét, és hagyjon üzenetet!
+                </legend>
+                <label for="nevInput">Név</label><br>
+                <input type="text" name="nevInput" id="nevInput" required size="59" minlength="5"><br>
+                <label for="mailInput">E-mail-cím</label><br>
+                <input type="email" name="mailInput" id="mailInput" required size="59"><br>
+                <label for="messageInput">Üzenet</label><br>
+                <textarea name="messageInput" id="messageInput" cols="60" rows="2" minlength="20"></textarea>
+                <button onclick="formCheck">Küldés</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+        <button>
+            <a href="#header">Ugrás az oldal tetejére</a>
+        </button>
+    </footer>
+
+    <!-- scripts -->
+    <!-- <script src="/assets/js/man.js"></script> -->
+</body>
+
+</html>

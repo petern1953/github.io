@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+
+:root {
+    --outPosition: 120vw;
+}
+
+html {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+body {
+    display: flex;
+    position: relative;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Raleway, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#basepage {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#basepage img {
+    display: inline-block;
+    position: absolute;
+    width: 100vw;
+}
+
+#init-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 2rem;
+    padding: .4rem 2rem 1.5rem;
+    background-color: chocolate;
+    color: white;
+    border: 1px solid rgb(46, 23, 7);
+    border-radius: 5px;
+}
+
+#hider {
+    display: flex;
+    position: fixed;
+    padding: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+#modal__container, #killer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal__container--hidden, .hider--hidden {
+    top: 0;
+    left: var(--outPosition);
+    transition: left .7s;
+}
+
+.modal__container--visible {
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: left .3s;
+}
+
+.hider--visible {
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    transition: left .3s;
+}
+
+#modal {
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    background-color: rgb(175, 250, 227);
+}
+
+@media screen and (min-width: 560px) {
+#modal {
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: rgb(175, 250, 227);
+    }
+}
+
+#modal__header {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: right;
+}
+
+.closer {
+    visibility: hidden;
+    font-size: 1.8rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.fa-times {
+    visibility: visible;
+}
+
+.article {
+    margin: 0 3rem;
+}
+
+.article__title {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.article__text {
+    line-height: 2rem;
+}
+
+.modal__footer {
+    float: right;
+    padding: 1rem 3rem 2.5rem;
+}
+
+.button--ok {
+    background-color: rgb(23, 136, 12);
+    color: rgb(255, 255, 255);
+}
+
+.button--cancel {
+    background-color: rgb(190, 15, 15);
+    color: rgb(255, 255, 255);
+}

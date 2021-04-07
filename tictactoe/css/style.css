@@ -1,0 +1,67 @@
+:root {
+    --field-size: 100px;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(192, 192, 192);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+h1 {
+    display: block;
+    position: relative;
+    margin: 4rem auto 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    position: relative;
+    margin: auto;
+    background-color: grey;
+    width: 304px;
+    height: 304px;
+}
+
+.field {
+    flex: none;
+    background-color: blue;
+    width: 98px;
+    height: 100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 5.3rem;
+    cursor: pointer;
+}
+
+.btn {
+    display: block;
+    position: relative;
+    top: .5rem;
+    font-size: 1.2rem;
+    width: 304px;
+    padding: 1rem 2rem;
+    background-color: grey;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message {
+    display: block;
+    visibility: hidden;
+    margin: auto;
+    color: red;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 4rem;
+}

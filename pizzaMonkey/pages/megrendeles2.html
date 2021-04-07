@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/weather.css">
+    <title>Pizza Ape -- Pizzarendelés</title>
+</head>
+
+<body>
+    <div class="row" id="weather">
+        <div class="col-2"></div>
+        <div class="col-8 weather">
+            <form>
+                <!-- <fieldset class="weather"> -->
+                <div class="row">
+                    <div class="col-5">
+                        <fieldset>
+                            <legend>
+                                <div id="idojarasLabel">Időjárás</div>
+                            </legend>
+                            <div class="form-group" id="napok">
+                                <select class="form-control" name="napok" id="napok">
+                                    <option id="0" value="0" selected>hétfő</option>
+                                    <option id="1" value="1">kedd</option>
+                                    <option id="2" value="2">szerda</option>
+                                    <option id="3" value="3">csütörtök</option>
+                                    <option id="4" value="4">péntek</option>
+                                    <option id="5" value="5">szombat</option>
+                                    <option id="6" value="6">vasárnap</option>
+                                </select>
+                            </div>
+                            <div id="weatherBtn">
+                                <button onclick="displayAjanlat()" type="button" class="btn btn-warning">Mutasd</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-7 ajanlat">
+                        <span id="homerseklet">0 °C</span><br>
+                        <p id="ajanlat">Hőmérsékletfüggő ajánlatunk: <span>hideg kakaó</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 hetiMin">
+                        Heti minimum:<span>0</span>°C
+                    </div>
+                    <div class="col-4 hetiMax">
+                        Heti maximum:<span>0</span>°C
+                    </div>
+                    <div class="col-4 hetiAtlag">
+                        Átlaghőmérséklet:<span>0</span>°C
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 btn-group">
+            <div class="col-3 btn">
+                <a href="elerhetosegek.html">Elérhetőség</a>
+            </div>
+            <div class="col-3 btn">
+                <a href="etlap.html">Étlap</a>
+            </div>
+            <div class="col-3 btn">
+                <a href="megrendeles2.html">Rendelés</a>
+            </div>
+            <div class="col-3 btn">
+                <a href="akciok.html">Akciók</a>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <form>
+                <fieldset class="adatok">
+                    <legend>
+                        <span>A *-gal jelölt mezők kitöltése kötelező.</span>
+                    </legend>
+                    <div class="form-group">
+                        <label for="name">Név: *</label>
+                        <input value="Kő Pál" class="form-control form-control-sm" type="text" name="name" id="name"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email-cím: *</label>
+                        <input value="a@b.c" class="form-control form-control-sm" type="email" name="email" id="email"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Cím: *</label>
+                        <input value="1111 Bp Ó u 1" class="form-control form-control-sm" type="text" name="address"
+                            id="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Megjegyzés:</label>
+                        <textarea class="form-control" name="comment" id="comment" rows="5"></textarea>
+                    </div>
+                    <div id="extraFeltet" class="form-group">
+                        <span>Extra feltét:</span>
+                        <div class="form-check">
+                            <input type="radio" name="extra" id="semmi" value="0" checked>
+                            <label class="form-check-label" for="semmi">Nem kérek</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="extra" id="sajt" value="300">
+                            <label class="form-check-label" for="sajt">Sajt (+300 Ft)</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="extra" id="duplaSajt" value="500">
+                            <label class="form-check-label" for="duplaSajt">Dupla sajt (+500 Ft)</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="extra" id="duplaHus" value="1000">
+                            <label class="form-check-label" for="duplaHus">Dupla hús (+1000 Ft)</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="extra" id="duplaFeltet" value="700">
+                            <label class="form-check-label" for="duplaFeltet">Sajt és paradicsom (+700
+                                Ft)</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="extra" id="valamiMas" value="1200">
+                            <label class="form-check-label" for="valamiMas">Sajt és dupla hús (+1200
+                                Ft)</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="szosz">Szósz:</label>
+                        <select class="form-control" name="szosz" id="szosz">
+                            <option id="fokhagymas" value="100" selected>fokhagymás öntet</option>
+                            <option id="ecetes" value="200">ecetes currys</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mennyi">Mennyiség:</label>
+                        <input onchange="setDijinfo()" class="form-control" type="number" name="mennyi" id="mennyi"
+                            min="1" max="10" value="1">
+                        <small class="form-text text-muted">
+                            Minimum 1, maximum 10 db
+                        </small>
+                    </div>
+                    <div>
+                        Ár <span class="summa"> 0</span> Ft <br>
+                        <small class="message">5000 Ft feletti rendelésnél a kiszállítás költségét (500 Ft) mi
+                            álljuk.</small>
+                    </div>
+                    <button onclick="checkAndPrice()" type="button" class="btn btn-green">Rendelés leadása</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/weather.js"></script>
+</body>
+
+</html>

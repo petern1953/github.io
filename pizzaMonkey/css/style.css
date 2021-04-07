@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;900&family=Teko:wght@700&display=swap');
+
+html {
+    background-color: rgb(250, 230, 0);
+}
+
+body {
+    margin: auto;
+    background-color: rgb(250, 230, 0);
+}
+
+#container1, #container2, #container3, #container4 {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+#container1 {
+    width: 80%;
+    height: auto;
+    /* background-color: rgb(250, 230, 0); */
+}
+
+#container2 {
+    width: 98%;
+    /* height: 780px; */
+    height: auto;
+}
+
+#container3 {
+    width: 98%;
+    height: 40px;
+}
+
+#container4 {
+    width: 98%;
+    /* display: block; */
+    height: auto;
+}
+
+fieldset.adatok {
+    width: 400px;
+    border: 1px solid darkgreen;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#head {
+    margin: 8px 0 10px 15px;
+}
+
+a {
+    min-width: 24.5%;
+    height: 30px;
+    margin: 10px .1% 0;
+    padding-top: 4px;
+    display: inline-block;
+    border-radius: 10px;
+    font-family: 'Alegreya Sans', sans-serif; 
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+a, .btn-sajat {
+    background-color: rgb(220, 60, 10);
+    color: whitesmoke;
+    box-shadow: 2px 2px 1px 1px rgb(92, 1, 1);
+}
+
+legend {
+    font-size: small;
+    width: auto;
+}
+.akcio {
+    background-color:  rgba(250, 230, 0, .5);
+    border-radius: 10px;
+    padding: 1px 10px 0px 10px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.akcioTxt, .akcioImg {
+    display: inline-block;
+    /* margin: auto; */
+}
+.akcioTxt {
+    width: 80%;
+    position: relative;
+}
+
+.akcioImg {
+    margin-top: 15px;
+    width: 19%;
+}
+
+.akcioImg img {
+    width: 100%;
+}
+
+/* .akcio img {
+    max-width: 150px;
+    height: auto;
+}
+ */
+.pizza {
+    width: 50px;
+}
+ 
+ td, p {
+     font-family: 'Roboto', sans-serif;
+    }
+    
+h1#head, div#container4 h1, h2, th, caption, strong, .bold { 
+        font-family: 'Alegreya Sans', sans-serif;    
+    }
+
+h1#head, .bold {
+    font-weight: bold;
+}
+
+#map {
+    width: 600px;
+}
+
+h1#head, th, strong {
+    color: rgb(68, 12, 12);
+}
+
+.etlapDiv table tr:nth-child(2), table tr:nth-child(4), table tr:nth-child(6) {
+    background-color: rgba(250, 230, 0, .5);
+    border-bottom: 2px solid rgba(3, 78, 3, .3);
+}
+
+.etlapDiv table {
+    border-collapse: collapse;
+}
+
+.etlapDiv td {
+    height: 27px;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+}
+
+h2, caption, td strong, .bold, .summa {
+    color: rgb(3, 78, 3);
+}
+
+.btn-green {
+    color: white;
+    background-color: rgb(3, 78, 3);
+}
+
+td strong, .bold {
+    font-size: 2em;
+}
+
+th, strong, .summa {
+    font-size: 1.3em;
+}
+
+.bold {
+    text-align: center;
+    width: 180%;
+}
+
+#container3 a:hover {
+    background-color: rgba(220, 60, 10, .5);
+    color: rgba(220, 60, 10);
+    box-shadow: 1px 1px 1px 1px rgba(102, 5, 5);}
+
+th {
+    text-align: left;
+}
+
+tfoot {
+    font-size: small;
+}

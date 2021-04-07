@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+
+body {
+  background: #eeeeee; 
+  color: #666666;
+  line-height: 1;     
+  font-family: 'Raleway' ;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 60pt;
+  
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.monkey {
+    background-image: url("../img/monkey.jpg");
+}
+
+.Bates {
+    background-image: url("../img/Bates.jpg");
+}
+
+.Rubik {
+    background-image: url("../img/Rubik.jpg");
+}
+
+.ToDo {
+    background-image: url("../img/todo.jpg");
+}
+
+.monkey, .Bates, .Rubik, .todo {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 10px;
+    margin: 10px;
+}
+
+.menuItem {
+    background-color: rgba(161, 82, 45, .1) ;
+    min-width: 15%;
+    max-width: 30%;
+    margin: 10px;
+    padding-top: 50px;
+    text-align: center;
+    color: wheat;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px 2px rgba(156, 59, 48, 0.6);
+}
+
+.menuItem:hover {
+    top: 2px; 
+    font-weight: 800;
+    background-color: rgba(250, 128, 114, .5) ;
+    box-shadow: 3px 3px 4px 2px rgba(114, 42, 34, 0.8);
+    filter: brightness(.95);
+}
+
+.menuItem a {
+    display: inline-block;
+    width: 100%;
+    height: 45%;
+    background-color: rgba(32, 255, 2, 0.3);
+    color: rgb(94, 32, 97);
+    cursor: pointer;
+    user-select: none;
+    list-style-type:none;
+    text-decoration: none; 
+    transition: all .5s ease-in-out;
+}
+
+.menuItem a:hover {
+    border: none;
+    background-color: rgba(32, 255, 2, 0.9);
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 4px 2px rgba(114, 42, 34, 0.8);
+    border-radius: 10px;
+    text-shadow: 1px 1px rgba(155, 74, 8, 0.5);
+    font-size: 24px;
+    transform-origin: 0% 50%;
+    transform: scale(1.2, 1.2);
+}
